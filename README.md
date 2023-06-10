@@ -1,6 +1,6 @@
-
+<p align="center">
 ![Logo](https://raw.githubusercontent.com/mvishok/SimpleNotes/main/logo.png)
-
+</p>
 
 # SimpleNotes
 

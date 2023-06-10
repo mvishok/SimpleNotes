@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimpleNotes</title>
+  <link rel="stylesheet" href="/styles.css">
+  
+</head>
+
+<body>
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+  <center>
+    <div class="content">
+      <h1>SimpleNotes</h1>
+      <em>
+        <p>We use cookies to enhance your browsing experience. By continuing to use this site, you consent to the use of cookies.</p>
+      </em>
+      <div class="container">
+        <form action="/notes" method="POST">
+          <input type="text" id="title" name="title" placeholder="Title" required>
+          <textarea id="content" name="content" placeholder="Content" style="height:200px" required></textarea>
+
+          <input type="submit" value="Create New Note">
+
+        </form>
+      </div>
+
+      {% for note in notes %}
+      <br>
+      <br>
+      <div class="container">
+        <h2>{{ note[1] }}</h2>
+        <p style="font-size:15px;">{{ note[2] }}</p>
+        <div class="actions">
+            <a href="/notes/{{ note[0] }}/delete"><button class="button-62" role="button">Delete Note</button></a>
+        </div>
+      </div>
+      <br>
+      <br>
+      {% endfor %}
+  </center>
+
+</body>
+
+</html>

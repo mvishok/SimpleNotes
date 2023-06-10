@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, session
+from flask import Flask, render_template, request, redirect
 import os
 import psycopg2
 import uuid
@@ -10,18 +10,6 @@ app.secret_key = os.urandom(16)
 # Initialize PostgreSQL connection
 DATABASE_URL = os.getenv('DATABASE_URL')
 conn = psycopg2.connect(DATABASE_URL, sslmode='require')
-
-# Create the notes table if it doesn't exist
-cursor = conn.cursor()
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS notes (
-        id SERIAL PRIMARY KEY,
-        title TEXT,
-        content TEXT,
-        user_id TEXT
-    )
-''')
-conn.commit()
 
 session_id = None
 

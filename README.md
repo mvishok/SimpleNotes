@@ -1,5 +1,5 @@
 <p align="center">
-![Logo](https://raw.githubusercontent.com/mvishok/SimpleNotes/main/logo.png)
+<img src='https://raw.githubusercontent.com/mvishok/SimpleNotes/main/logo.png' alt='logo'/>
 </p>
 
 # SimpleNotes

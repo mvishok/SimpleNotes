@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, send_from_directory
 import os
 import psycopg2
 import uuid
@@ -24,6 +24,10 @@ def before_request():
         response.set_cookie('session_id', session_id)
         return response
 
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                          'favicon.ico',mimetype='image/vnd.microsoft.icon')
 
 @app.route('/styles.css')
 def styles():

@@ -1,21 +1,17 @@
-/* scrollbar width */
 ::-webkit-scrollbar {
     width: 8px;
 }
 
-/* scrollbar Track */
 ::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
 
-/* scrollbar Handle */
 ::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
 
-/* scrollbar Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 0, 0, 1);
 }
@@ -81,21 +77,17 @@ h1, h2, p {
     }
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type="text"],
-select,
-textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+input[type="text"], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical; 
 }
 
-/* Style the submit button with a specific background color etc */
 input[type="submit"] {
     background-color: #04aa6d;
     color: white;
@@ -105,44 +97,16 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
     background-color: #45a049;
 }
 
-/* Add a background color and some padding around the form */
 .container {
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     padding: 20px;
 }
 
-/* CSS */
-.button-33 {
-  background-color: #c2fbd7;
-  border-radius: 100px;
-  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
-  color: green;
-  cursor: pointer;
-  display: inline-block;
-  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-  padding: 7px 20px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 250ms;
-  border: 0;
-  font-size: 16px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-33:hover {
-  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
-  transform: scale(1.05) rotate(-1deg);
-}
-
-/* CSS */
 .button-62 {
   background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
   border: 0;
